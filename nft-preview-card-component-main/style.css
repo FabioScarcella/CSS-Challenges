@@ -1,0 +1,130 @@
+:root {
+    --radius: 1rem
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.link {
+    color: hsl(178, 100%, 50%)
+}
+
+#card {
+    margin: auto;
+    background-color: hsl(216, 50%, 16%);
+    width: 40%;
+    border-radius: var(--radius);
+    box-shadow: -35px 20px 10px hsl(217deg 54% 11%);
+}
+
+#card .mainImage {
+    width: 100%;
+    border-radius: var(--radius);
+    text-align: center;
+    display: block;
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.prices {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prices div{
+    display: inline-block;
+    width: 49%;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.line {
+    height: 0px;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+}
+
+.author {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.author p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar {
+    width: 12%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 765px) {
+    .avatar {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 530px) {
+    .prices div {
+        width: auto;
+        margin: 10px 0 ;
+    }
+
+    .author p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    #card {
+        width: 75%;
+    }
+
+    .info {
+        text-align: center;
+    }
+    .avatar {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .prices div {
+        width: auto;
+        margin: 10px;
+    }
+
+    .right-align {
+        text-align: center;
+    }
+}
